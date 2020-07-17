@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="quiz.css">
+</head>
+<body>
+	<div class="quiz-container">
+		<div class="question-number">
+			<h3>Question <span class="question-num-value"></span> of <span class="total_no"></span></h3>
+		</div>
+		<div class="question">
+		</div>
+		<div class="options">
+			<div id="0" class="option1" onclick="check(this)"></div>
+			<div id="1" class="option2" onclick="check(this)"></div>
+			<div id="2" class="option3" onclick="check(this)"></div>
+			<div id="3" class="option4" onclick="check(this)"></div>
+		</div>
+		<div class="border">
+		</div>
+		<div class="button">
+			<button type="button" class="btn" onclick="next()">Next</button>
+		</div>
+		<div class="answer-tracker">
+		</div>
+	</div>
+	<div class="quizover">
+		<div class="box">
+			<h1>Good Try <br>
+				You got <span class="over-obtained">2</span> out of <span class="over-total">3</span> <br>
+				<span class="percentage">50%</span>
+			</h1>
+			<button type="button" onclick="tryagain()">Try Again</button>
+		</div>
+	</div>
+	<script src="quiz.js"></script>
+
+</body>
+</html>
